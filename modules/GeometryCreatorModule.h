@@ -13,8 +13,8 @@ public:
   GeometryCreatorModule() {}
 
   /** Create the actual geometry. */
-  void begin();
+  void begin() override;
 
   /** Clean up any created chamber from stored information. */
-  void event();
+  void event() override;
 };
